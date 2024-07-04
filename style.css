@@ -1,5 +1,7 @@
 * { 
+    
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +9,24 @@
 
 html {
     display: grid;
+    display: flex;
+    align-items: center;
     font-family: "Oswald", sans-serif;
     background-color: black;
     color: white;
+    height: 100vh;
 }
 
 body {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
     color: white;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    
 }
 
 .boton-menu {
@@ -22,7 +34,7 @@ body {
 }
 
 .contenedor {
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -81,32 +93,43 @@ body {
     display: inline-block;
     padding: 5px 10px;
     color: white;
-    background-color: #7d7d7d;
-    border: 2px solid white;
+    background-color: #303030;
+    border: 1px solid white;
     text-decoration: none;
     font-size: 1.1em;
+    margin-top: 10px;
+
 }
 
 .tarjetas-noticias {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 25px;
+    width: 100%;
     
+}
+.tarjetas-noticias2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 80%;
 }
 
 .tarjetas-noticias__tarjeta {
     flex: 1 1 calc(25% - 20px);
-    padding: 20px;
     border-radius: 10px;
-    
+    width: 500px;
+ 
+
 }
 
 .tarjetas-noticias__tarjeta img {
     width: 100%;
     height: 250px;
     margin-bottom: 20px;
-    gap: 30%;
+    gap: 30px;
     
 }
 
@@ -131,4 +154,122 @@ body {
     text-decoration: none;
     font-weight: bold;
     
+}
+
+
+ /* SEGUNDA ENTREGA PROYECTO PARTE 2 */
+
+
+.banner-tarjetas-uno {
+    text-align: center;
+    margin: 20px 349px;
+    width: 80%;
+    height: 12vh;
+    background: url('assets/tech-red.jpg') no-repeat center center / cover;
+
+}
+
+.banner-tarjetas-uno__contenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 15vh;
+    
+}
+
+
+.banner-tarjetas-dos {
+    display: grid;
+    background-color: #111;
+    color: #fff;
+    height: 14vh;
+    width: 80%;
+    text-align: center;
+    padding: 50px 20px;
+    background: url('assets/Image-five.jpg') no-repeat center center/cover;
+    margin-top: 20px;
+}
+.banner-tarjetas-dos__contenido {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 50%;
+    gap: 15px;
+}
+.social p{
+    font-size: 15px;
+}
+
+.social__enlaces {
+    color: white;
+    gap: 20px;
+    width: 40%;
+
+
+}
+.fab {
+
+}
+.fa-facebook-f, .fa-twitter, .fa-linkedin {
+    color: white;
+    font-size: 55px;
+    margin:  0 10px 0 10px;
+    
+}
+
+.pie {
+    display: flex;
+    background-color: rgb(40, 47, 49);
+    margin-bottom: 40px;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+.pie h3 {
+    display: flex;
+    color:#7d7d7d;
+
+
+}
+.pie h4{
+
+    text-align: center;
+    color: rgb(64, 67, 70);
+}
+.enlaces-pie {
+    color: white;
+    
+}
+.enlaces-pie__contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.enlaces-pie__lista a {
+    color: white;
+    text-decoration: none;
+    
+}
+.enlaces-pie__lista{
+    list-style-type:none ;
+
+
 }
